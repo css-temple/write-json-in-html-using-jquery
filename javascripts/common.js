@@ -16,7 +16,7 @@ $(document).ready(function(){
 				array = [],
         l = data.length;
 		for(i = 0; i < l; i++) {
-			array[i] = '<li class="clearfix"><div class="image-holder"><img src="' + data[i].img + '" width="300" height="160"></div> <div class="main-info"><h3>' + data[i].title + '</h3><div class="info">' + data[i].info + '</div><p class="url">URL: <a href="' + data[i].url + '">' + data[i].url + '</a></p></div></li>';
+			array[i] = '<li class="clearfix"><div class="image-holder"><img src="' + data[i].img + '" width="300" height="160"></div> <div class="main-info"><h3>' + data[i].title + '</h3><div class="info">' + data[i].info + '</div><p class="url">URL: <a href="' + data[i].url + '" target="_blank">' + data[i].url + '</a></p></div></li>';
     }
     $siteList.html(array.join(''));
 
