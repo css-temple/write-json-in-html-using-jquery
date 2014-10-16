@@ -10,7 +10,7 @@
 */
 
 $(document).ready(function(){
-	var startTime = new Date().getTime();
+	
 	$.getJSON( "website.json", function(data) {
 		var $siteList = $(".site-list"),
 				array = [],
@@ -23,9 +23,6 @@ $(document).ready(function(){
     $(document).ajaxStop(function() {
 			$('.site-list').find('li:last-child').addClass('last');
 		});
-
-		var endTime = new Date().getTime();
-		console.log(endTime - startTime);
 	});
 
 });
